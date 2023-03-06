@@ -219,7 +219,7 @@ def run_extensions_installers(settings_file):
 def prepare_environment():
     global skip_install
 
-    torch_command = os.environ.get('TORCH_COMMAND', "pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu")
+    torch_command = os.environ.get('TORCH_COMMAND', "pip install torch 1.13.1 torchvision 0.14.1 torchaudio --extra-index-url https://download.pytorch.org/whl/cpu")
     requirements_file = os.environ.get('REQS_FILE', "requirements_versions.txt")
     commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
 
